@@ -1,0 +1,39 @@
+configs:
+  debug: debug
+  staging: release
+  production: release
+fileGroups:
+  - Resources
+options:
+  minimumXcodeGenVersion: 2.37.0
+  deploymentTarget:
+    iOS: "15.0"
+
+targetTemplates:
+  common:
+    info:
+      path: "Resources/Plists/${target_name}-Info.plist"
+      properties:
+        CFBundleVersion: 1.0.0
+
+  application:
+    templates:
+      - common
+    platform: iOS
+    type: application
+    scheme:
+      gatherCoverageData: true
+
+  test:
+    templates:
+      - common
+    platform: iOS
+    type: bundle.unit-test
+    scheme:
+      gatherCoverageData: true
+
+  framework:
+    templates:
+      - common
+    platform: iOS
+    type: framework

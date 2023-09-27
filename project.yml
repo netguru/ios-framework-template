@@ -1,0 +1,36 @@
+name: CoreFramework
+include:
+  - ios_framework_template.yml
+
+options:
+  bundleIdPrefix: "com.xcodegenDemo"
+
+targets:
+  CoreFrameworkDemoApp:
+    templates:
+      - application
+    sources:
+      - App
+    dependencies:
+      - target: CoreFramework
+    scheme:
+      testTargets:
+        - CoreFrameworkTests
+    info:
+      properties:
+        UILaunchStoryboardName: LaunchView
+
+  CoreFramework:
+    templates:
+      - framework
+    sources:
+      - CoreFramework
+    scheme:
+      testTargets:
+        - CoreFrameworkTests
+
+  CoreFrameworkTests:
+    templates:
+      - test
+    sources:
+      - CoreFrameworkTests
