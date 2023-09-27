@@ -55,7 +55,9 @@ That way the changes made in `ios_framework_template.yml` will be propagated to 
 
 # Contributing
 
-Pull requests and issues are always welcome. Please open any issues and PRs for bugs, features, or documentation.
+Pull requests and issues are always welcome. Please open any issues and PRs for bugs, features, or documentation. SLA for resolving issues is set to 30 working days.
+
+Current repo maintainer: [Siemian](https://github.com/Siemian)
 
 # License
 
