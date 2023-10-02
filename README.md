@@ -43,6 +43,15 @@ Statistical data sent.
 🎉 You are all set here. 🎉
 Happy coding!
 ```
+## Configuration alignment
+When introducing new module to existing project it is crucial to have the same set of configurations. As in case those are not in line, Xcode will throw an error when building, indicating that our newly created module does not exist(`No such module 'XYZ'`). The fix to that issue is quite simple. Open `ios_framework_template.yml` and replace the configuration definition to match the configuration you already have in the project. Make sure to have exactly the same names(including capitalization)
+```yml
+configs:
+  Development: debug
+  Staging: release
+  Production: release
+```
+
 ## Multi framework project
 Framework setup make use of template file, allowing multiple frameworks to share common setup.
 In order to use single template file for multiple frameworks, move it one level higher and update `project.yml`
