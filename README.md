@@ -12,9 +12,14 @@ For more info regarding XcodeGen please refer to it's documentation.
 ## Setup new framework
 1. Clone the repository
 ```bash
-mkdir NameOfTheFramework
-cd NameOfTheFramework
+# Clone repository to main directory
 git-clone 'https://github.com/netguru/ios-framework-template'
+# Rename cloned repo folder
+mv ios-framework-template YourFrameworkName
+# Enter the folder
+cd YourFrameworkName
+# Remove git setup from the framework template
+rm -rf .git
 ```
 2. Run the setup script
 ```
