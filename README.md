@@ -13,7 +13,7 @@ For more info regarding XcodeGen please refer to it's documentation.
 1. Clone the repository
 ```bash
 # Clone repository to main directory
-git-clone 'https://github.com/netguru/ios-framework-template'
+git clone 'https://github.com/netguru/ios-framework-template'
 # Rename cloned repo folder
 mv ios-framework-template YourFrameworkName
 # Enter the folder
