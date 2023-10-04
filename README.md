@@ -65,7 +65,10 @@ include:
   - path: ../ios_framework_template.yml
     relativePaths: false
 ```
-That way the changes made in `ios_framework_template.yml` will be propagated to all sub frameworks. Thanks to that, adding new Build Setting or changing min supported iOS version will require the change in one single file. and running `xcodegen generate` for all frameworks, 1 minute job.
+That way the changes made in `ios_framework_template.yml` will be propagated to all sub frameworks. Thanks to that, adding new Build Setting or changing min supported iOS version will require the change in one single file and running `xcodegen generate` for all frameworks, 1 minute job.
+
+### Example
+More complex example how to use xcodegen and our module setup in multi-module project can be found here: https://github.com/netguru/ios-bitrise-client-public
 
 # Contributing
 
